@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Form</title>
+</head>
+  <body>
+    <h1 align="center"> Student Enrollment Form </h1>
+    <div class="container">
+    <div id="form">
+      <h2>Registration Form</h2><br>
+      <form>
+        <label for="name">Name:  </label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:  </label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="website">Website:  </label>
+        <input type="website" id="website" name="website" required><br><br>
+        <label for="imagelink">Imagelink:  </label>
+        <input type="imagelink" id="imagelink" name="imagelink" required><br><br>
+        <label for="gender">Gender:  </label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit" onclick="displayData(event)">
+      </form>
+    </div>
+    </div>
+    <div id="output"></div>
+    <script src="style.js"></script>
+  </body>
+</html>
